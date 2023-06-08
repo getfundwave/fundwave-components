@@ -7,11 +7,16 @@
     "access": "public"
   },
   "scripts": {
+    "start": "es-dev-server --app-index index.html --node-resolve --watch --open",
     "build": "lerna run build",
     "test": "lerna run test",
     "publish": "lerna publish"
   },
   "devDependencies": {
+    "es-dev-server": "^2.1.0",
     "lerna": "^6.6.2"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
   }
 }
